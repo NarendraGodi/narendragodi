@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Python CRUD</title>
+</head>
+<body>
+<h1>Total users List</h1>
+<table border=1>
+      <tr>
+    <th>Name</th>
+    <th>Email</th>
+  </tr>
+    {% for user in userDetails%}
+    <tr>
+        <td>{{user[0]}}</td>
+        <td>{{user[1]}}</td>
+    </tr>
+    {%endfor%}
+</table>
+</body>
+</html>
